@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {bookReducer} from './reducers/bookReducer'
+import {quoteReducer} from './reducers/quoteReducer'
 import { Provider } from "react-redux";
 import {createStore} from 'redux';
 
-const store = createStore(bookReducer);
+const store = createStore(quoteReducer);
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider>
+    <Provider store={store}>
       <App />
     </Provider>
   </React.StrictMode>,
