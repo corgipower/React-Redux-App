@@ -1,6 +1,6 @@
 export const initialState = {
-    quote: '',
-    character: '',
+    quote:'',
+    character:'',
 }
 
 export const bookReducer = (state = initialState, action) => {
