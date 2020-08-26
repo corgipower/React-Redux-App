@@ -5,9 +5,10 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {quoteReducer} from './reducers/quoteReducer'
 import { Provider } from "react-redux";
-import {createStore} from 'redux';
+import {createStore, applyMiddleware} from 'redux';
+import thunk from 'redux-thunk';
 
-const store = createStore(quoteReducer);
+const store = createStore(quoteReducer, applyMiddleware(thunk));
 
 ReactDOM.render(
   <React.StrictMode>
