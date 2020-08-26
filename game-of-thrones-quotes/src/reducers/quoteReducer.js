@@ -2,13 +2,11 @@ export const initialState = {
     quote: 'quote placeholder',
     character: 'character placeholder',
     isLoading: false,
-    quoteBy: ''
 }
 
 export const START_GETTING_QUOTE = "START_GETTING_QUOTE";
 export const SUCCESS_GETTING_QUOTE = "SUCCESS_GETTING_QUOTE";
 export const ERROR_GETTING_QUOTE = "ERROR_GETTING_QUOTE";
-export const GET_CHARACTER = "GET_CHARACTER";
 
 export const quoteReducer = (state = initialState, action) => {
     switch(action.type) {
