@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  margin-top: 20px;
+}
+
+cite {
+  color: darkgreen;
+}
+
+.character {
+  color: darkmagenta;
+  text-transform: uppercase;
+}
